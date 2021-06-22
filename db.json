@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "mayurpatel78645@gmail.com",
+      "password": "password"
+    },
+    {
+      "email": "mayurpatel78645@yahoo.com",
+      "password": "asdg",
+      "id": 2
+    },
+    {
+      "email": "mayurpatel78645@yahoo.com",
+      "password": "asdf",
+      "id": 3
+    },
+    {
+      "email": "mayurpatel78645@yahoo.com",
+      "password": "asdf",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

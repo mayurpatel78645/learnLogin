@@ -4,8 +4,16 @@ import Container from '@material-ui/core/Container';
 import Login from './Login';
 import SignUp from './SignUp';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+
+  const [user, setUser] = useState();
+
+  const currentUser = () => {
+    setUser(user);
+  }
+
   return (
     <>
       <Router>
@@ -19,7 +27,7 @@ function App() {
 
             <Route exact path='/login'>
               <h1>Login</h1>
-              <Login />
+              <Login currentUser={currentUser} />
             </Route>
             
             <Route exact path='/signUp'>
